@@ -53,6 +53,7 @@ def add_entry_in_sidebar():
         # Save the updated DataFrame to GitHub
         name = new_entry[DATA_COLUMNS[0]]
         msg = f"Add contact '{name}' to the file {DATA_FILE}"
+        st.write(st.session_state.de)
         st.session_state.github.write_df(DATA_FILE, st.session_state.df, msg)
 
 def display_dataframe():
