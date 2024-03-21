@@ -56,7 +56,7 @@ def add_entry_in_sidebar():
         st.write(st.session_state.df)
         st.session_state.github.write_df(DATA_FILE, st.session_state.df, msg)
 
-def display_dataframe()
+def display_dataframe():
     """Display the DataFrame in the app."""
     if not st.session_state.df.empty:
         st.dataframe(st.session_state.df)
